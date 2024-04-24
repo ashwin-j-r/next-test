@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">FARE PLAY</a>
+        </div>
+
+        <div class="flexnav">
+           
+        <ul class="menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Points</a></li>
+            <li><a href="#">Waitlist</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>       
+    </div>
+    </nav>
+    <div class="clouds-background">
+        <!-- Clouds background -->
+    </div>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Gamble for Free<br><span>Earn Points</span></h1>
+            <div class="points">
+                <div class="point">
+                    <img src="icon.png" alt="Icon 1">
+                    <p>Click LAUNCH APP</p>
+                </div>
+                <div class="point">
+                    <img src="icon.png" alt="Icon 2">
+                    <p>Connect your wallet</p>
+                </div>
+                <div class="point">
+                    <img src="icon.png" alt="Icon 3">
+                    <p>Enter Your invite code</p>
+                </div>
+            </div>
+            <div class="buttons">
+                <button>LAUNCH APP</button>
+                <button>LEARN MORE</button>
+            </div>
+        </div>
+        <img src="bg.png" alt="Hero Image" class="hero-image">
+    </div>
+    <div class="content">
+        <!-- Your content here -->
+    </div>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+    });
+});
+</script>
+</html>
